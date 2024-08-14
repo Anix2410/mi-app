@@ -1,20 +1,14 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Navbar from './components/Navbar';
-import ItemListContainer from './components/ItemListContainer';
-import ItemDetailContainer from './components/ItemDetailContainer';
+import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';  // Aquí está la importación de Bootstrap
 
 function App() {
   return (
-    <Router>
-      <Navbar />
-      <Routes>
-        <Route path="/" element={<ItemListContainer />} />
-        <Route path="/category/:categoryId" element={<ItemListContainer />} />
-        <Route path="/item/:itemId" element={<ItemDetailContainer />} />
-      </Routes>
-    </Router>
+    <div className="App">
+      {/* Aquí va el contenido de tu aplicación */}
+    </div>
   );
 }
 
 export default App;
+
